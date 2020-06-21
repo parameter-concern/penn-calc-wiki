@@ -73,8 +73,6 @@ $$
 
 </div>
 
-
-
 ### Inverse
 
 The *inverse* is the function that undoes $$f$$. If you plug $$f(x)$$ into $$f^{-1}$$, you will get $$x$$. Notice that this function works both ways. If you plug $$f^{-1}(x)$$ into $$f(x)$$, you will get back $$x$$ again.
@@ -160,15 +158,13 @@ What is $$x^{\pi}$$ ? We are not yet equipped to handle this, but we will come b
 
 You should be familiar with the basic trigonometric functions $$\sin$$, $$\cos$$. One fact to keep in mind is $$\cos^{2} \theta +\sin^{2} \theta=1$$ for any $$\theta$$. This is known as a *Pythagorean identity*, which is so named because of one of the ways to prove it:
 
-![Pythagorean identity visual proof](/assets/images/Pythagorean.png)
-{: style="text-align: center;"}
+![Pythagorean identity visual proof]({{ site.baseurl }}/assets/images/Pythagorean.png)
 
 By looking at a right triangle with hypotenuse 1 and angle $$\theta$$, and labeling the adjacent and opposite sides accordingly, one finds by using Pythagoras' Theorem that $$\cos^2 \theta + \sin^2 \theta = 1$$.
 
 Another way to think about it is to embed the above triangle into a diagram for the unit circle where we see that $$\cos\theta$$ and $$\sin\theta$$ returns the x and y coordinates, respectively, of a point on the unit circle with angle $$\theta$$ to the $$x$$-axis:
 
-![Unit Circle](/assets/images/UnitCircle.png)
-{: style="text-align: center;"}
+![Unit Circle]({{ site.baseurl }}/assets/images/UnitCircle.png)
 
 That explains the nature of the formula $$\cos^{2} \theta+\sin^{2} \theta=1$$. It comes from the equation of the unit circle $$x^2 + y^2 = 1$$.
 
@@ -221,8 +217,7 @@ $$
 
 Recall the graph of $$e^x$$, plotted here alongside its inverse, $$\ln x$$:
 
-![Pythagorean identity visual proof](/assets/images/ExpLn.png)
-{: style="text-align: center;"}
+![Graph showing exp and ln are inverses]({{ site.baseurl }}/assets/images/ExpLn.png)
 
 Note that the graphs are symmetric about the line $$y = x$$ (as is true of the graphs of a function and its inverse).
 
@@ -264,8 +259,7 @@ $$
 
 By plotting the points $$x=1$$ and $$x=2$$ (where the denominator equals 0) and testing points between them, one finds that $$x^2 - 3x+2>0$$ when $$x<1$$ or $$x>2$$:
 
-![Line of testing points](/assets/images/PointChecking.png)
-{: style="text-align: center;"}
+![Line of testing points]({{ site.baseurl }}/assets/images/PointChecking.png)
 
 So the domain of $$f$$ is $$x<1$$ or $$2<x$$. In interval notation, this is $$\left(-\infty,1\right) \cup \left(2, \infty \right)$$.
 </div>
