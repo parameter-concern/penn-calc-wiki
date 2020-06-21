@@ -4,13 +4,13 @@
 layout: home
 ---
 {% for topic in site.data.topics %}
-{% assign topic_number = forloop.index0 %}
+{%- assign topic_index = forloop.index0 -%}
 <h2 id="{{ topic.slug }}" name="{{ topic.slug }}">{{ topic.name }}</h2>
 <ol>
-{% for lecture in site.lectures %}
-{% if lecture.topic_number == topic_number %}
-<li value="{{ lecture.lecture_number }}"><a href="{{ lecture.url }}">{{ lecture.title }}</a></li>
-{% endif %}
-{% endfor %}
+{%- for lecture in site.lectures -%}
+{%- if lecture.topic_number == topic_index -%}
+<li value="{{ lecture.lecture_number }}"><a href="{{ site.baseurl }}{{ lecture.url }}">{{ lecture.title }}</a> - {{ lecture.description }}</li>
+{%- endif -%}
+{%- endfor -%}
 </ol>
 {% endfor %}

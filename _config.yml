@@ -19,7 +19,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   This is a GitHub Pages text to accompany Robert Ghrist's Single-Variable 
   Calculus class, as presented on Coursera beginning January 2013. All material 
   is copyright 2012-2013 Robert Ghrist.
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/penn-calc-wiki"
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username:
 github_username:

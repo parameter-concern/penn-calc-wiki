@@ -21,10 +21,10 @@ This course focuses on the big picture over gritty calculations and memorized tr
 ## Outline
 
 These are the big topics covered, and the number of lectures per topic:
-
-1. [Functions]({% link index.html %}#functions): 9 lectures
-2. [Differentiation]({% link index.html %}#differentiation): 7 lectures
-3. [Integration]({% link index.html %}#integration): 12 lectures
-4. [Applications]({% link index.html %}#applications): 14 lectures
-5. [Discrete Calculus]({% link index.html %}#discretization): 13 lectures
-5. [Wrap-Up]({% link index.html %}#wrap-up): 1 lecture
+{% for topic in site.data.topics %}
+{%- if forloop.first -%}{%- continue -%}{%- endif -%}
+{%- if forloop.last -%}{%- continue -%}{%- endif -%}
+{%- assign topic_index = forloop.index0 -%}
+{% assign topic_lectures = site.lectures | where: "topic_number", topic_index %}
+1. [{{ topic.name }}]({{ site.baseurl }}/#{{ topic.slug }}): {{ topic_lectures | size }} lectures
+{%- endfor -%}
