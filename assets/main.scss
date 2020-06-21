@@ -1,0 +1,21 @@
+---
+---
+@import "minima";
+
+.answer-hidden {
+    display: none;
+    background-color: rgb(238, 221, 255);
+    border: 1px solid rgb(153, 153, 153);
+    padding: 15px;
+}
+
+dl.theorem {
+    background-color: #ccffff;
+    padding-bottom: 1px;
+}
+
+dl.theorem dt {
+    padding: 0px 4px;
+    background-color: #66ccff;
+    border-bottom: 1px dashed black;
+}
