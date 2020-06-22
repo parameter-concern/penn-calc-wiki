@@ -14,31 +14,27 @@ This course deals with functions whose domains and ranges are $$\mathbb{R}$$ or 
 
 ## Examples
 
-- Polynomials, e.g. $$f(x) = x^3-5x^2+x+9$$. Give the domain and range of $$f$$. <button class="toggle" data-box="#box1">Answer</button>
+1.  Polynomials, e.g. $$f(x) = x^3-5x^2+x+9$$. Give the domain and range of $$f$$. <button class="toggle" data-box="#box1">Answer</button>
 
-The domain is $$\mathbb{R}$$, because we can plug in any real number into a polynomial. The range is $$\mathbb{R}$$, which we see by noting that this is a cubic function, so as $$x \rightarrow -\infty$$, $$f(x) \rightarrow -\infty$$, and as $$x \rightarrow \infty$$, $$f(x) \rightarrow \infty$$.
-{: id="box1" class="answer-hidden"}
+    The domain is $$\mathbb{R}$$, because we can plug in any real number into a polynomial. The range is $$\mathbb{R}$$, which we see by noting that this is a cubic function, so as $$x \rightarrow -\infty$$, $$f(x) \rightarrow -\infty$$, and as $$x \rightarrow \infty$$, $$f(x) \rightarrow \infty$$.
+    {: id="box1" class="answer-hidden"}
+2.  Trigonometric functions, e.g. $$\sin$$, $$\cos$$, $$\tan$$. Give the domain and range for each of these. <button  class="toggle" data-box="#box2">Answer</button>
 
-- Trigonometric functions, e.g. $$\sin$$, $$\cos$$, $$\tan$$. Give the domain and range for each of these. <button  class="toggle" data-box="#box2">Answer</button>
+    For $$\sin$$ and $$\cos$$: domain is $$\mathbb{R}$$; range is $$\left[-1,1\right]$$.  
+    For $$\tan$$, the domain is $$\lbrace x \in \mathbb{R}: x \neq \frac{\pi}{2}+k\pi\rbrace$$; range is $$\mathbb{R}$$.
+    {: id="box2" class="answer-hidden"}
+3.  The exponential function, $$e^x$$. Give the domain and range for the exponential. <button  class="toggle" data-box="#box3">Answer</button>
 
-For $$\sin$$ and $$\cos$$: domain is $$\mathbb{R}$$; range is $$\left[-1,1\right]$$.  
-For $$\tan$$, the domain is $$\lbrace x \in \mathbb{R}: x \neq \frac{\pi}{2}+k\pi\rbrace$$; range is $$\mathbb{R}$$.
-{: id="box2" class="answer-hidden"}
+    Domain is $$\mathbb{R}$$; range is $$(0,\infty)$$.
+    {: id="box3" class="answer-hidden"}
+4.  The natural logarithm function, $$\ln x$$. Recall that this is the inverse of the exponential function. Give the domain and range for $$\ln x$$. <button  class="toggle" data-box="#box4">Answer</button>
 
-- The exponential function, $$e^x$$. Give the domain and range for the exponential. <button  class="toggle" data-box="#box3">Answer</button>
+    Domain is $$(0,\infty)$$; range is $$\mathbb{R}$$. Notice how the domain and range of the exponential relate to the domain and range of the natural logarithm.
+    {: id="box4" class="answer-hidden"}
+5.  Is $$\sin^{-1}$$ a function? If so, why? If not, is there a way to make it into a function? <button  class="toggle" data-box="#box5">Answer</button>
 
-Domain is $$\mathbb{R}$$; range is $$(0,\infty)$$.
-{: id="box3" class="answer-hidden"}
-
-- The natural logarithm function, $$\ln x$$. Recall that this is the inverse of the exponential function. Give the domain and range for $$\ln x$$. <button  class="toggle" data-box="#box4">Answer</button>
-
-Domain is $$(0,\infty)$$; range is $$\mathbb{R}$$. Notice how the domain and range of the exponential relate to the domain and range of the natural logarithm.
-{: id="box4" class="answer-hidden"}
-
-- Is $$\sin^{-1}$$ a function? If so, why? If not, is there a way to make it into a function? <button  class="toggle" data-box="#box5">Answer</button>
-
-$$\sin^{-1}$$ is not a function, because one input has many outputs. For example, $$\sin^{-1}(0) = 0,\pi,2\pi,\ldots$$. By restricting the range of $$\sin^{-1}$$ to $$\displaystyle\left[-\frac{\pi}{2},\frac{\pi}{2}\right]$$, one gets the function $$\arcsin$$.
-{: id="box5" class="answer-hidden"}
+    $$\sin^{-1}$$ is not a function, because one input has many outputs. For example, $$\sin^{-1}(0) = 0,\pi,2\pi,\ldots$$. By restricting the range of $$\sin^{-1}$$ to $$\displaystyle\left[-\frac{\pi}{2},\frac{\pi}{2}\right]$$, one gets the function $$\arcsin$$.
+    {: id="box5" class="answer-hidden"}
 
 ## Operations on Functions
 
