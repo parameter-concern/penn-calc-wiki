@@ -3,5 +3,6 @@ layout: default
 ---
 
 <h1>{{ page.title }}</h1>
-
+{%- include lecture-nav.html -%}
 {{ content | markdownify }}
+{%- include lecture-nav.html -%}

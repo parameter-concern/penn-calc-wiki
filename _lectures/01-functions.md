@@ -14,6 +14,8 @@ This course deals with functions whose domains and ranges are $$\mathbb{R}$$ or 
 
 ## Examples
 
+{::comment}The whitespace formatting of this list is very particular in order to get the answers treated as blocks underneath the list items.{:/comment}
+
 1.  Polynomials, e.g. $$f(x) = x^3-5x^2+x+9$$. Give the domain and range of $$f$$. <button class="toggle" data-box="#box1">Answer</button>
 
     The domain is $$\mathbb{R}$$, because we can plug in any real number into a polynomial. The range is $$\mathbb{R}$$, which we see by noting that this is a cubic function, so as $$x \rightarrow -\infty$$, $$f(x) \rightarrow -\infty$$, and as $$x \rightarrow \infty$$, $$f(x) \rightarrow \infty$$.
@@ -134,7 +136,7 @@ Other powers besides those of positive integers are useful.
 What is $$x^{0}$$ ? <button class="toggle" data-box="#box6">Answer</button>
 
 
-$$x^{0}=1$$&nbsp;
+$$x^{0}=1$$&#8203;
 {: id="box6" class="answer-hidden"}
 
 What is $$x^{-\frac{1}{2}}$$ ? <button class="toggle" data-box="#box7">Answer</button>
@@ -155,18 +157,20 @@ What is $$x^{\pi}$$ ? We are not yet equipped to handle this, but we will come b
 You should be familiar with the basic trigonometric functions $$\sin$$, $$\cos$$. One fact to keep in mind is $$\cos^{2} \theta +\sin^{2} \theta=1$$ for any $$\theta$$. This is known as a *Pythagorean identity*, which is so named because of one of the ways to prove it:
 
 ![Pythagorean identity visual proof]({{ site.baseurl }}/assets/images/Pythagorean.png)
+{: .mathimg }
 
 By looking at a right triangle with hypotenuse 1 and angle $$\theta$$, and labeling the adjacent and opposite sides accordingly, one finds by using Pythagoras' Theorem that $$\cos^2 \theta + \sin^2 \theta = 1$$.
 
 Another way to think about it is to embed the above triangle into a diagram for the unit circle where we see that $$\cos\theta$$ and $$\sin\theta$$ returns the x and y coordinates, respectively, of a point on the unit circle with angle $$\theta$$ to the $$x$$-axis:
 
 ![Unit Circle]({{ site.baseurl }}/assets/images/UnitCircle.png)
+{: .mathimg }
 
 That explains the nature of the formula $$\cos^{2} \theta+\sin^{2} \theta=1$$. It comes from the equation of the unit circle $$x^2 + y^2 = 1$$.
 
 Others trigonometric functions:
 
-$$\begin{equation*} \tan=\displaystyle\frac{\sin}{\cos} \end{equation*} $$&nbsp;
+$$\begin{equation*} \tan=\displaystyle\frac{\sin}{\cos} \end{equation*} $$&#8203;
 
 $$\begin{equation*} \cot=\displaystyle\frac{\cos}{\sin} \end{equation*} $$, the reciprocal of $$\tan$$
 
@@ -214,6 +218,7 @@ $$
 Recall the graph of $$e^x$$, plotted here alongside its inverse, $$\ln x$$:
 
 ![Graph showing exp and ln are inverses]({{ site.baseurl }}/assets/images/ExpLn.png)
+{: .mathimg }
 
 Note that the graphs are symmetric about the line $$y = x$$ (as is true of the graphs of a function and its inverse).
 
@@ -225,10 +230,8 @@ Before continuing, one might ask, what is $$e$$? There are several ways to defin
 To close this lesson, we give a wonderful formula, which for now we will just take as a fact:
 
 Euler's Formula
-: $$
-  \begin{equation*} e^{ix}=\cos x+i\sin x \end{equation*}
-  $$
-{: .theorem }
+: $$\begin{equation*} e^{ix}=\cos x+i\sin x \end{equation*}$$
+{: .mathterm .theorem }
 
 The $$i$$ in the exponent is the imaginary number $$\sqrt{-1}$$. It has the properties $$i^{2}=-1$$. $$i$$ is not a real number. That doesn't mean that it doesn't exist. It just means it is not on a real number line.
 
@@ -256,6 +259,7 @@ $$
 By plotting the points $$x=1$$ and $$x=2$$ (where the denominator equals 0) and testing points between them, one finds that $$x^2 - 3x+2>0$$ when $$x<1$$ or $$x>2$$:
 
 ![Line of testing points]({{ site.baseurl }}/assets/images/PointChecking.png)
+{: .mathimg }
 
 So the domain of $$f$$ is $$x<1$$ or $$2<x$$. In interval notation, this is $$\left(-\infty,1\right) \cup \left(2, \infty \right)$$.
 </div>

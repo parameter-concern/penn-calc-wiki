@@ -1,0 +1,25 @@
+{%- assign topic = site.data.topics[page.topic_number] -%}
+{%- assign prev = page.lecture_number | minus: 1 -%}
+{%- assign next = page.lecture_number | plus: 1 -%}
+{%- assign last = site.lectures | size -%}
+<nav class="lecture-nav">
+<ul>
+{% if prev >= 0 %}
+<li class="lecture-prev">
+    <a href="{{ site.baseurl }}{{ site.lectures[prev].url }}">
+        {{ site.lectures[prev].title }}
+    </a>
+</li>
+{% endif %}
+<li class="lecture-home">
+    <a href="{{ site.baseurl }}/#{{ topic.slug }}">Home</a>
+</li>
+{% if next <= last %}
+<li class="lecture-next">
+    <a href="{{ site.baseurl }}{{ site.lectures[next].url }}">
+        {{ site.lectures[next].title }}
+    </a>
+</li>
+{% endif %}
+</ul>
+</nav>

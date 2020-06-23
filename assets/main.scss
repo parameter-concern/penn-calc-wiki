@@ -2,25 +2,64 @@
 ---
 @import "minima";
 
+.lecture-nav {
+    float: right;
+    background-color: #eee;
+}
+
+.lecture-nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 15px;
+}
+
+.lecture-nav li {
+    display: inline-block;
+}
+
+.lecture-nav li::before {
+    content: " |";
+}
+
+.lecture-nav li.lecture-prev::before {
+    content: "<";
+}
+
+.lecture-next::after {
+    content: ">";
+}
+
 .answer-hidden {
     display: none;
     background-color: rgb(238, 221, 255);
     border: 1px solid rgb(153, 153, 153);
-    padding: 15px;
+    padding: 10px 15px;
+    margin: 10px;
 }
 
-dl.theorem {
+.mathterm {
     background-color: #ccffff;
-    padding-bottom: 1px;
+    margin: 20px;
 }
 
-dl.theorem dt {
+.mathterm dt {
     padding: 0px 4px;
-    background-color: #66ccff;
     border-bottom: 1px dashed black;
 }
 
-img {
+.mathterm.theorem dt {
+    background-color: #66ccff;
+}
+
+.mathterm.definition dt {
+    background-color: #ffe53e;
+}
+
+.mathterm dd {
+    padding: 10px 15px;
+}
+
+.mathimg img {
     display: block;
     margin-left: auto;
     margin-right: auto;
