@@ -8,7 +8,9 @@ To find/replace dollar signs for kramdown, use:
 
 Replace \(\$|\$\) with $$$$
 Also, replace \(:latex:\)( ?\\\[)? with $$$$\n
-Finally, replace ( ?\\\[)?\(:latexend:\)
+Finally, replace ( ?\\\[)?\(:latexend:\) with \n$$$$
+Replace ^\s*\\begin\{align\*\}\s* with \begin{align*}\n
+Replace \s*\\end\{align\*\}\s*$ with \n\end{align*}
 
 This may miss some standalone \] markers,
 Clean them up with \\\]\s*
