@@ -1,6 +1,21 @@
 ---
 ---
+
 @import "minima";
+
+/**
+ * Why is this necessary?
+ *
+ * MathJax tries to set it to 113.1% which hides \big\vert,
+ * setting it to 105% seems to be about as big as it can get?
+ *
+ * It must be related to minima's font setting in _base.scss, since
+ * removing that also fixes it (and kills the layout), but I can't
+ * figure out what is happening.
+ **/
+mjx-container {
+    font-size: 105% !important;
+}
 
 .lecture-nav {
     float: right;
@@ -65,3 +80,4 @@
     margin-left: auto;
     margin-right: auto;
 }
+/**/

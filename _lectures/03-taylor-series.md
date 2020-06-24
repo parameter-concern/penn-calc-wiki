@@ -10,7 +10,7 @@ hidden_answers: true
 {::options parse_block_html="true" /}
 The long polynomial from the last module is actually called a Taylor series about $$x=0$$ (this is referred to as a Maclaurin series in some textbooks, but this course will use the term Taylor series). The last module gave the Taylor series for $$e^x$$, $$\sin x$$, and $$\cos x$$. The logical next question is to ask whether every function has a Taylor series.
 
-The answer is that most reasonable functions, and almost all of the functions encountered in this course, have a Taylor series. That is, every reasonable function $$f$$ can be written as
+The answer is that most *reasonable* functions, and almost all of the functions encountered in this course, have a Taylor series. That is, every reasonable function $$f$$ can be written as
 
 $$
 f(x) = \sum_{k=0}^\infty c_k x^k = c_0 + c_1 x + c_2 x^2 + \dotsb.
@@ -28,22 +28,22 @@ Taylor series at $$x=0$$
   f(x) = f(0) + \frac{f'(0)}{1!}x + \frac{f(0)}{2!}x^2 + \frac{f'(0)}{3!}x^3+\dotsb = \sum_{k=0}^\infty \frac{f^{\left(k\right)}(0)}{k!} x^k,
   \end{equation*} 
   $$
+  
+  where $$f^{\left(k\right)}(0)$$ is the $$k$$th derivative of $$f$$ evaluated at 0. In other words, the coefficient $$c_k$$ mentioned above is given by
+  
+  $$
+  c_k = \frac{f^{\left(k\right)}(0)}{k!} = \frac{1}{k!} \cdot \frac{d^k f}{dx^k}\bigg\vert_0
+  $$
 {: .mathterm .definition }
 
-where $$f^{\left(k\right)}(0)$$ is the $$k$$th derivative of $$f$$ evaluated at 0. In other words, the coefficient $$c_k$$ mentioned above is given by
-
-$$
-c_k = \frac{f^{\left(k\right)}(0)}{k!} = \frac{1}{k!} \cdot \frac{d^k f}{dx^k}\bigg\vert_0
-$$
 
 This seems circular, since the definition uses the function, and its derivatives, to write down the function. However, the definition only actually requires information about the function at a single point (in this case, 0). It is best to think of the Taylor series as a way of turning a function into a polynomial.
 
 **Example**
+
 Compute the Taylor series for $$e^x$$ using the above definition to see that it matches the given series from the last module. <button class="toggle" data-box="#box1">Answer</button>
 
 <div id="box1" class="answer-hidden">
-
-
 Here, $$f(x) = e^x$$, and every derivative of $$e^x$$ is $$e^x$$. Therefore, for all $$k$$ we have
 
 $$
@@ -67,8 +67,6 @@ as claimed.
 Compute the Taylor series for $$f(x) = \sin x$$ using the above definition, and verify it matches the series found using Euler's formula. <button class="toggle" data-box="#box2">Answer</button>
 
 <div id="box2" class="answer-hidden">
-
-
 Computing the derivatives, and then evaluating at $$x=0$$ gives the following table:
 
 $$
@@ -96,8 +94,6 @@ confirming what was found last time.
 Example Compute the Taylor series for $$f(x) = x^2-5x+3$$. <button class="toggle" data-box="#box3">Answer</button>
 
 <div id="box3" class="answer-hidden">
-
-
 Again, by directly using the definition:
 
 $$
@@ -124,7 +120,8 @@ $$
 The big idea of this module is that the Taylor series can be thought of as an operator (a machine) which turns a function into a series. This is a useful operator because some functions are hard (or even impossible) to express using combinations of familiar functions. Nevertheless, these functions can often be understood by computing their Taylor series.
 
 **Example**
-The Bessel function, denoted $$J_0$$, is best defined by its Taylor series:
+
+The *Bessel function*, denoted $$J_0$$, is best defined by its Taylor series:
 
 $$
 \begin{align*}
@@ -135,6 +132,9 @@ $$
 
 This series has only the even powers of $$x$$, and it alternates, which is reminiscent of the series for cosine. One difference is that the denominator in the Bessel function grows more quickly than the denominator in the series for cosine. Thus, we might expect the graph to be a wave with a decreasing amplitude, which is exactly what we find:
 
+![Bessel]({{ site.baseurl }}/assets/images/Bessel.png)
+{: .mathimg }
+
 It turns out that the Bessel function describes many physical phenomena, including the shape of a hanging chain as it is rotated, and the shape of the waves formed after a stone is thrown into a pool of water.
 
 ## Taylor series as polynomial approximants
@@ -142,6 +142,9 @@ It turns out that the Bessel function describes many physical phenomena, includi
 The main reason Taylor series are useful is that they turn a potentially complicated function into something simple: a polynomial. Granted, this polynomial is infinitely long in general, but in practice it is only necessary to compute the first few terms to get a good, local approximation of the function. The more terms one includes, the better the polynomial approximates the function.
 
 As an example, consider a particle on the number line with position function $$p(t)$$. At time 0, say its position is 5. Then one approximation of its position as a function of time is $$p_0(t) = 5$$. Given more information, say its velocity at time 0 is 3, the approximation becomes better. The next approximation as a function of time is $$p_1(t) = 5+3t$$. Now, suppose its acceleration at time 0 is $$-4$$. Then $$p_2(t) = 5+3t-\frac{4}{2}t^2 = 5+3t-2t^2$$ is an even better polynomial approximation of the position function.
+
+![Approximants]({{ site.baseurl }}/assets/images/Approximants.png)
+{: .mathimg }
 
 ## Exercises
 
