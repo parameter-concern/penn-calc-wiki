@@ -350,4 +350,4 @@ $$
 - For which values $$z$$ is the Taylor series of $$\sqrt[4]{3-2z^2}$$ guaranteed to converge?
 - Use the binomial series to give the Taylor expansion of $$(1+x)^3$$. Now, do it with your head: easier, right? Recall, we have said that the binomial series only converges when $$\vert x \vert < 1$$, but, clearly, that cannot be a *sharp* constraint, since $$(1+x)^3$$ is good for all $$x$$, right? Well, Horatio, there are more things... By the end of this course, we will learn when and how to bend some of these restrictions.
 - Build a cylinder with radius 1 and height 3. Build a second cylinder with radius 1/2 and height 9, a third cylinder with radius 1/4, height 27, a fourth cylinder with radius 1/8 and height 81, and so on. What is the total volume of the cylinders?
-- For which values of $$x$$ does the Taylor series of $$(\frac{1}{4}-3x^2)^{1/4}$$ converge? 
+- For which values of $$x$$ does the Taylor series of $$(\frac{1}{4}-3x^2)^{1/4}$$ converge?
