@@ -54,12 +54,13 @@ Substituting $$x^3$$ into the series for $$e^x$$ gives
 
 $$
 \begin{align*}
-e^{x^3} &= 1 + x^3 + \frac{(x^3)^2}{2!} + \frac{(x^3)^3}{3!} + \dotsb
-&= 1 + x^3 + \frac{x^6}{2!} + \frac{x^9}{3!} + \dotsb
-&= \sum_{k=0}^\infty \frac{(x^3)^k}{k!}
+e^{x^3} &= 1 + x^3 + \frac{(x^3)^2}{2!} + \frac{(x^3)^3}{3!} + \dotsb \\
+&= 1 + x^3 + \frac{x^6}{2!} + \frac{x^9}{3!} + \dotsb \\
+&= \sum_{k=0}^\infty \frac{(x^3)^k}{k!} \\
 &= \sum_{k=0}^\infty \frac{x^{3k}}{k!}
 \end{align*}
 $$
+
 </div>
 
 ## Combining like terms
