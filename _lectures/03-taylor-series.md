@@ -154,12 +154,12 @@ As an example, consider a particle on the number line with position function $$p
 - What are the first two nonzero terms in the Taylor series of $$\sqrt[3]{1-2x}$$?
 - What is the coefficient of the cubic term in the Taylor series of $$e^{-3x}$$?
 - Use what you know about Taylor series to determine the third derivative of $$\sin^3(2x)\cos^2(3x)$$ at $$x=0$$. That's a *lot* easier than computing the derivatives!
-- The ERF function is defined in terms of a difficult integral: 
-
-$$
-ERF(x) = \frac{2}{\sqrt{\pi}}\int_0^x e^{-t^2}\, dt
-$$
-
+- The ERF function is defined in terms of a difficult integral:
+  
+  $$
+  ERF(x) = \frac{2}{\sqrt{\pi}}\int_0^x e^{-t^2}\, dt
+  $$
+  
 - Even if you don't remember integrals all that well, you know how to integrate a polynomial, right? So, Taylor expand the integrand and integrate term by term to get the Taylor series for ERF.
 - What is the third derivative of ERF(x) at zero?
 - Why does a Taylor series have all those $$n!$$ terms in the denominator? Let's see. Compute the Taylor series of $$f(x) = (1+x)^5$$ by (1) using the binomial theorem (or multiplication) to expand that power; then (2) by differentiating the function and using the Taylor series formula. What do you notice when you keep computing higher derivatives?

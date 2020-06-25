@@ -284,4 +284,3 @@ $$
 
 As in the above example, plotting the points where this equals 0 and then testing points, we find that the domain is $$0<x<2$$ and $$4<x$$. In interval notation, this is $$\left(0,2 \right) \cup \left(4,\infty\right)$$.
 </div>
-

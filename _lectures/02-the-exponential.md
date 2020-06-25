@@ -178,10 +178,10 @@ Each polynomial in the sequence is, in a sense, the best approximation possible 
 - Write out the following series using summation notation:
   
   $$1 - \frac{2}{3!} + \frac{4}{5!} - \frac{8}{7!} + \cdots$$
-
+  
 - Estimate $$\sin(1/2)$$ to three digits of accuracy. How many terms in the series did this take?
 - We've seen that $$i = e^{i\pi/2}$$ via Euler's formula. Using this and some algebra, tell me what is $$i^i$$. Isn't that nice? Now, tell me, what is $$(i^i)^i$$? Are you surprised? That's like, unreal!
-- Practice your summation notation by rewriting the sum 
+- Practice your summation notation by rewriting the sum
   
   $$\sum_{n=2}^\infty (-1)^n\frac{x^{n-2}}{n^3}$$
   
