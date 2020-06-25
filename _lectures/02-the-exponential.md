@@ -28,7 +28,7 @@ One can now plug values for $$x$$ into the above sum to compute $$e^x$$. When $$
 
 ## A long polynomial
 
-There are technical concerns when trying to add up an infinite number of things. These issues will be dealt with later in the modules on [series]({{ site.baseurl }}{% link _lectures/50-series.md %}). For now, treat the infinite sum above as a long polynomial (the actual term is the *Taylor series about* $$x=0$$, which will be more formally dealt with in [the next module]({{ site.baseurl }}{% link _lectures/03-taylor-series.md %})). Polynomials are nice because they are easy to integrate and differentiate. Recall the power rule for differentiating and integrating a monomial $$x^k$$, where $$k$$ is a constant:
+There are technical concerns when trying to add up an infinite number of things. These issues will be dealt with later in the modules on [Series]({{ site.baseurl }}{% link _lectures/50-series.md %}). For now, treat the infinite sum above as a long polynomial (the actual term is the *Taylor series about* $$x=0$$, which will be more formally dealt with in [the next module]({{ site.baseurl }}{% link _lectures/03-taylor-series.md %})). Polynomials are nice because they are easy to integrate and differentiate. Recall the power rule for differentiating and integrating a monomial $$x^k$$, where $$k$$ is a constant:
 
 $$
 \begin{align*}
